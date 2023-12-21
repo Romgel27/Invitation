@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- javascript files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header class="header">
@@ -157,4 +158,16 @@
     }
     });
     </script>
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.home-content, .logo-img, .forms, .place-img , .cards', {
+          duration: 1000,
+          easing: 'ease-in-out',
+          origin: 'bottom',
+          distance: '50px',
+          delay: 300,
+          reset: true,
+        });
+      </script>
+      
 </html>
