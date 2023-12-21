@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- site specific tags -->
+    <!-- style sheets -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- javascript files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="openMenu"><i class='bx bx-menu'></i></div>
+                    <ul class="mainMenu">
+                        <li><a class="navbar-brand" href="#home"><i class="bx bxs-cake"></i>Home</a></li>
+                        <li><a class="navbar-brand" href="#program"><i class="bx bxs-party"></i>Event Program</a></li>
+                        <li><a class="navbar-brand" href="#place"><i class='bx bxs-building-house'></i>Event Place</a></li>
+                        <li><a class="navbar-brand" href="#invitation"><i class='bx bxs-envelope'></i>Party Invitation</a></li>
+                <div class="closeMenu"><i class='bx bxs-exit'></i></div>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Home Page-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1> You are invited to my 18th Birthday Celebration </h1>
+            <p>I kindly invite you to join me in celebrating my birthday! <br>Come spend a day with me celebrating another <br>amazing year of amazing moments, laughing, and joy. <br>The day would be even more special with your presence.</p>
+            <div class="countdown">
+                <p>Date: <span class="date">January 6, 2024</span></p>
+                <p>Time: <span>4:30pm- 9:00pm</span></p>
+                <ul>
+                    <li><span id="days"></span> days</li>
+                    <li><span id="hours"></span> Hours</li>
+                    <li><span id="minutes"></span> Minutes</li>
+                    <li><span id="seconds"></span> Seconds</li>
+                </ul>
+            </div>
+            <div id="content" class="emoji">
+                <span>it's my birthday</span>
+            </div>
+        </div>
+        <div class="logo-img">
+            <img src="images/LOGO3.png" class="img-fluid" alt="">
+        </div>
+    </section>
+    <!--Program-->
+    <section class="program" id="program">
+    <div class="cards">
+            <h2 class="heading">Event Program</h2>
+        <div class="row justify-content-md-center">
+            <div class="col">
+                <div class="card" >
+                    <img src="images/roses.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="images/gifts.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/bills.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-l">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-1" id="exampleModalLabel">Event Program</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="#" class="modal-img" alt="Modal Image">
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+    <!---EventPlace Page-->
+
+    <section class="Place" id="place">
+        
+    <div class="place-img">
+        <h2 class="heading">Event <span>Place</span></h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="images/event1.jpg" class="d-block w-100" alt="Responsive-image">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/event2.jpg" class="d-block w-100" alt="Responsive-image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            
+            <div class="text">
+                <h1>Location:  <span>Alberto's Event Center</span></h1>
+                <h2> Address:  <span>193 J.P. Laurel St, Sto Tomas, Batangas</span></h2>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.4528112603258!2d121.14190002570463!3d14.10929016447374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd659687a52947%3A0x5d82cb7c6cc93960!2sAlberto%E2%80%99s%20Event%20Center!5e0!3m2!1sen!2sph!4v1702250439064!5m2!1sen!2sph" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    </div>
+    </section>
+
+<!---Invitation Link Page-->
+<section class="link" id="invitation">
+    <div class="forms">
+        <h2 class="heading">Invitation</h2>
+        <div class="container-fluid contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfge7B3jOKRgnNiti60WvxyUdjJrcOBIYczhuglaEu-V9lDsQ/viewform?embedded=true" width="500" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="contact-info">
+        <div>
+            <i class="bx bxs-phone"></i>
+            Angel:(+63)9176363142
+            
+        </div>
+    </div>
+    <p>&copy; Roman Angelo Dayto. All rights reserved.</p>
+</footer>
+</body>
+<script src="Js/index.js"></script>
+<script src="Js/countdown.js"></script>
+<script type="text/javascript">
+    document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("card-img-top")) {
+      const src = e.target.getAttribute("src");
+      document.querySelector(".modal-img").src = src;
+      const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+      myModal.show();
+    }
+    });
+    </script>
+</html>
