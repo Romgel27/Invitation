@@ -419,6 +419,32 @@ footer {
     font-weight: 400;
     color: var(--text-color2);
 }
+/*top-button*/
+#scrollTopBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color2);
+    color: var(--text-color2);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    cursor: pointer;
+    font-size: 5px;
+}
+#scrollTopBtn i
+{
+    font-size: 25px;
+}
+
+
+#scrollTopBtn:hover 
+{
+    background-color: var(--color1);
+}
+
 
 /* Contact information styles */
 .contact-info {

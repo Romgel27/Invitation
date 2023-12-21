@@ -144,29 +144,30 @@
     </div>
     <p>&copy; Roman Angelo Dayto. <br>All rights reserved.</p>
 </footer>
+<button id="scrollTopBtn" title="Go to top"><i class='bx bxs-up-arrow-square'></i></button>
 </body>
 <script src="Js/index.js"></script>
 <script src="Js/countdown.js"></script>
+<script src="Js/button.js"></script>
 <script type="text/javascript">
     document.addEventListener("click", function(e) {
     if (e.target.classList.contains("card-img-top")) {
-      const src = e.target.getAttribute("src");
-      document.querySelector(".modal-img").src = src;
-      const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
-      myModal.show();
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+        myModal.show();
     }
     });
     </script>
     <script>
         // Initialize ScrollReveal
         ScrollReveal().reveal('.home-content, .logo-img, .forms, .place-img , .cards', {
-          duration: 1000,
-          easing: 'ease-in-out',
-          origin: 'bottom',
-          distance: '50px',
-          delay: 300,
-          reset: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            distance: '50px',
+            delay: 300,
+            reset: true,
         });
-      </script>
-      
+    </script>
 </html>
