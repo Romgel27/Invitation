@@ -436,7 +436,12 @@ footer {
 
 /* Optional: Style for icons */
 .contact-info i {
-    margin-right: 5px;
+    font-size: 20px;
+    
+}
+p
+{
+    font-size: 20px;
 }
 
 
